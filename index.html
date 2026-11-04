@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Maquette WarmUp : déjeuners de bureau pour sportifs, formules de 3 ou 5 repas et trois profils de macros.">
+<title>WarmUp — Des déjeuners qui donnent envie</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--ink:#182b22;--green:#284d36;--lime:#d6ef83;--cream:#f8f7f2;--line:#dedfd4;--muted:#667068}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.6}h1,h2,h3,p{margin:0}h1,h2,h3,.logo{font-family:Manrope,sans-serif}a{color:inherit;text-decoration:none}button,input{font:inherit}button,a,input{ -webkit-tap-highlight-color:transparent}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #9e7131;outline-offset:5px}button{color:inherit}img{display:block;width:100%;height:100%;object-fit:cover}.wrap{max-width:1192px;margin:auto;padding:0 38px}.announcement{background:var(--green);color:white;text-align:center;font-size:11px;padding:8px 20px;letter-spacing:.1em}.announcement span{color:var(--lime)}header{border-bottom:1px solid var(--line);background:var(--cream)}nav{height:83px;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{font-size:24px;letter-spacing:-1.4px;font-weight:800}.logo span{color:#72934c}.navlinks{display:flex;gap:30px;font-size:13px}.button{display:inline-flex;justify-content:center;align-items:center;gap:20px;background:var(--green);color:white;border:1px solid var(--green);padding:14px 22px;border-radius:7px;font-weight:600;font-size:13px;transition:background .2s,transform .2s}.button:hover{background:#163c26;transform:translateY(-1px)}.button.light{background:var(--lime);color:var(--ink);border-color:var(--lime)}.eyebrow{text-transform:uppercase;letter-spacing:.17em;font-weight:700;font-size:10px}.dot{display:inline-block;width:7px;height:7px;background:#88a957;border-radius:50%;margin-right:8px}.hero{display:grid;grid-template-columns:1fr 1fr;gap:55px;padding-top:58px;padding-bottom:55px;align-items:center}.hero h1{font-size:clamp(44px,4.6vw,65px);letter-spacing:-3.5px;line-height:1.08;margin:22px 0}.hero h1 em{font-style:normal;color:#6f8a4f}.hero .intro{font-size:16px;color:var(--muted);max-width:410px}.hero .button{margin-top:28px}.hero-foot{display:flex;gap:20px;font-size:11px;color:var(--muted);margin-top:19px}.hero-art{height:485px;position:relative;border-radius:130px 12px 12px 12px;background:#d4d8bf;padding:30px;overflow:hidden;isolation:isolate}.hero-art:before{content:'';position:absolute;inset:22px;border:1px solid #b0b99a;border-radius:110px 8px 8px 8px;z-index:-1}.hero-art svg{width:100%;height:100%;filter:drop-shadow(0 20px 17px #35422335)}.art-label{position:absolute;left:24px;bottom:24px;background:#fffef4f5;padding:15px 18px;border-radius:8px;box-shadow:0 5px 20px #00000008;font-size:11px}.art-label strong{display:block;font-size:17px;margin-bottom:3px}.art-sticker{position:absolute;right:20px;top:20px;background:var(--lime);width:94px;height:94px;border-radius:50%;display:grid;place-content:center;text-align:center;font-size:11px;line-height:1.4;transform:rotate(10deg)}.art-sticker strong{font-size:27px;letter-spacing:-1px}.strip{display:flex;justify-content:space-between;gap:18px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:12px}.strip span{color:var(--muted)}section{padding:70px 0}.section-top{display:flex;justify-content:space-between;gap:35px;align-items:end;margin-bottom:28px}h2{font-size:35px;letter-spacing:-1.5px;line-height:1.2;margin-top:12px}.section-top p{color:var(--muted);font-size:13px;max-width:300px}.config-layout{display:grid;grid-template-columns:1fr 340px;gap:35px}.step{margin-bottom:26px}.step-title{font-size:14px;display:flex;align-items:center;gap:10px;margin-bottom:13px}.number{border:1px solid #bcc6b7;border-radius:50%;width:23px;height:23px;display:inline-grid;place-content:center;font-size:10px}.choices{display:grid;grid-template-columns:1fr 1fr;gap:12px}.choice{background:transparent;border:1px solid var(--line);border-radius:9px;padding:17px;text-align:left;position:relative}.choice[aria-pressed=true]{border:1.5px solid var(--green);background:#edf0e4}.choice strong{display:block;font-size:18px;letter-spacing:-.5px}.choice small{display:block;color:var(--muted);font-size:11px;margin-top:3px}.choice .check{position:absolute;right:14px;top:17px;width:17px;height:17px;border:1px solid #b8c1ae;border-radius:50%}.choice[aria-pressed=true] .check{background:var(--green);border:4px solid #edf0e4;outline:1px solid var(--green)}.profile-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.profile{padding:17px 12px}.profile strong{font-size:15px}.profile .kcal{font-size:23px;display:block;margin-top:11px;font-weight:700}.profile .kcal span{font-size:10px;color:var(--muted);font-weight:400}.macroline{font-size:10px;white-space:nowrap;margin-top:4px}.tip{font-size:11px;color:var(--muted);margin-top:12px}.summary{background:var(--ink);color:white;border-radius:12px;padding:27px;align-self:start}.summary .eyebrow{color:var(--lime)}.summary h3{font-size:25px;line-height:1.2;margin:14px 0 7px;letter-spacing:-.7px}.summary .description{color:#c0cbbf;font-size:12px}.summary dl{margin:23px 0 17px;font-size:12px}.summary dl div{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid #ffffff25}.summary dd{margin:0}.price{font-size:43px;font-weight:700;letter-spacing:-2px}.price small{font-size:12px;letter-spacing:0;font-weight:400;color:#c0cbbf}.summary .button{width:100%;margin:17px 0 12px}.summary .fine{color:#c0cbbf;font-size:10px;text-align:center}.weekly{background:#eeeee5}.menu-top{display:flex;align-items:center;gap:9px;font-size:11px;color:var(--muted)}.menu-top select{border:1px solid #c9cfbe;background:transparent;border-radius:6px;padding:8px;color:var(--ink);font:inherit}.meals{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.meal{background:var(--cream);border:1px solid #dddfd2;border-radius:11px;overflow:hidden}.meal-visual{height:206px;background:#dddccf;position:relative}.meal-visual svg{width:100%;height:100%}.meal-tag{position:absolute;top:12px;left:12px;background:#fffdf3ed;border-radius:30px;font-size:10px;padding:4px 10px}.meal-body{padding:21px}.meal-body h3{font-size:18px;letter-spacing:-.5px}.meal-body p{font-size:12px;color:var(--muted);margin:6px 0 18px;min-height:38px}.meal-macros{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);padding-top:13px;gap:4px}.meal-macros b{display:block;font-size:14px}.meal-macros span{display:block;color:var(--muted);font-size:9px}.menu-note{font-size:11px;color:var(--muted);margin-top:17px}.how{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}.how-copy p{color:var(--muted);font-size:14px;margin-top:20px;max-width:370px}.how-list{list-style:none;padding:0;margin:0}.how-list li{display:grid;grid-template-columns:34px 1fr;gap:16px;border-bottom:1px solid var(--line);padding:20px 0}.how-list li:first-child{padding-top:0}.how-list .count{color:#809264;font-size:12px}.how-list h3{font-size:15px}.how-list p{color:var(--muted);font-size:12px;margin-top:5px}.founder{background:var(--green);color:white;border-radius:12px;padding:36px;display:grid;grid-template-columns:70px 1fr;gap:25px;align-items:center}.founder-mark{width:65px;height:65px;border:1px solid #c8dea7;border-radius:50%;display:grid;place-content:center;font-size:29px;color:var(--lime)}.founder p{font-size:20px;line-height:1.5;letter-spacing:-.4px}.founder small{display:block;margin-top:12px;font-size:11px;color:#d1ddc8}.faq{display:grid;grid-template-columns:1fr 1.5fr;gap:70px}.faq h2{max-width:270px}details{border-bottom:1px solid var(--line);padding:18px 0}details:first-child{padding-top:0}summary{font-weight:600;font-size:13px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px}summary:after{content:'+';font-size:18px;color:#728261}details[open] summary:after{content:'−'}details p{font-size:12px;color:var(--muted);margin-top:12px}.bottom-cta{text-align:center;background:var(--lime);padding:45px 22px;border-radius:12px}.bottom-cta h2{margin:0 0 12px}.bottom-cta p{font-size:13px;margin-bottom:22px}footer{border-top:1px solid var(--line);margin-top:65px;padding:25px 0 35px}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-row small{font-size:11px;color:var(--muted)}.demo-note{font-size:10px;color:var(--muted);margin-top:18px;max-width:850px}dialog{border:0;border-radius:15px;padding:32px;max-width:470px;width:calc(100% - 32px);background:var(--cream);color:var(--ink);box-shadow:0 20px 80px #0003}dialog::backdrop{background:#182b2299;backdrop-filter:blur(4px)}dialog h2{font-size:27px;margin:10px 0}dialog p{font-size:13px;color:var(--muted)}.dialog-close{position:absolute;right:13px;top:9px;border:0;background:transparent;font-size:24px}#order-detail{background:#e9eddd;padding:17px;border-radius:7px;font-size:13px;margin:20px 0}dialog .button{width:100%}.no-motion{scroll-behavior:auto}@media(min-width:1500px){.hero{padding-top:78px;padding-bottom:75px}}@media(max-width:1000px){.wrap{padding:0 25px}.hero{gap:25px}.hero-art{height:420px}.hero h1{font-size:50px}.config-layout{grid-template-columns:1fr 300px;gap:22px}.profile-grid{grid-template-columns:1fr}.profile{display:grid;grid-template-columns:1fr 1fr;align-items:center}.profile .kcal{margin:0;text-align:right}.macroline{grid-column:1/-1}.navlinks{gap:17px}.how,.faq{gap:35px}}@media(max-width:700px){.wrap{padding:0 20px}.announcement{font-size:9px}nav{height:70px}.logo{font-size:22px}.navlinks{display:none}nav .button{padding:10px 13px;font-size:11px}.hero{grid-template-columns:1fr;padding-top:35px;gap:30px}.hero h1{font-size:49px;letter-spacing:-2.6px}.hero .intro{font-size:15px}.hero-art{height:355px;border-top-left-radius:90px}.hero-foot{gap:12px}.strip{display:grid;grid-template-columns:1fr 1fr;font-size:11px}section{padding:48px 0}.section-top{display:block}h2{font-size:29px}.section-top p{margin-top:14px}.config-layout{grid-template-columns:1fr}.profile-grid{grid-template-columns:repeat(3,1fr);gap:7px}.profile{display:block;padding:13px 9px}.profile strong{font-size:13px}.profile .kcal{font-size:21px;text-align:left;margin-top:9px}.macroline{font-size:9px;white-space:normal}.profile small{font-size:9px}.summary{padding:25px}.meals{grid-template-columns:1fr}.meal{display:grid;grid-template-columns:110px 1fr}.meal-visual{height:100%;min-height:195px}.meal-visual svg{width:210px;max-width:none;position:absolute;left:-50px}.meal-tag{left:7px;top:8px;font-size:8px;padding:3px 7px}.meal-body{padding:16px}.meal-body h3{font-size:16px}.meal-body p{font-size:11px}.meal-macros b{font-size:12px}.menu-top{margin-top:17px}.how,.faq{grid-template-columns:1fr;gap:30px}.founder{padding:25px;grid-template-columns:1fr;gap:18px}.founder p{font-size:18px}.founder-mark{width:45px;height:45px;font-size:22px}.footer-row{align-items:start;flex-direction:column;gap:10px}.bottom-cta h2{font-size:27px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+
+/* Identité WarmUp */
+:root {
+  --ink: #222d26;
+  --green: #244537;
+  --lime: #e0f18e;
+  --cream: #fbf8ef;
+  --line: #e2dfd2;
+  --muted: #555f54;
+  --peach: #f4c4aa;
+}
+.logo {font-size: 27px; letter-spacing: -1.7px}
+.logo span {color: var(--ink)}
+.logo i {font-style: normal; color: #617744; padding-left: 4px}
+.hero h1 {font-size: clamp(45px, 5.3vw, 76px); letter-spacing: -.075em; line-height: 1.03}
+.hero h1 em {color: #4c683e}
+.hero .intro {max-width: 475px}
+.hero-foot span {background: #eeeede; border-radius: 20px; padding: 5px 11px}
+.hero-art {background: #e5e9cf; border-radius: 42% 42% 16px 16px}
+.hero-art:before {border-radius: inherit; inset: 12px; border-color: #bec9a5}
+.art-sticker {background: var(--peach); top: 23px; right: 20px}
+.art-label {border: 1px solid #ebe4d2}
+.schedule {display: grid; grid-template-columns: repeat(3,1fr); background: #eeefdf; border-radius: 13px; padding: 16px 22px; gap: 12px}
+.schedule > div {display: flex; align-items: center; gap: 13px}
+.schedule-icon {background: var(--green); color: var(--lime); border-radius: 50%; width: 34px; height: 34px; display: grid; flex: 0 0 34px; place-items: center; font-size: 11px}
+.schedule strong,.schedule small {display: block}
+.schedule small {font-size: 11px; color: var(--muted)}
+.weekly {background: #eeefe4}
+.meal:nth-child(1) .meal-visual {background: #dce6c8}
+.meal:nth-child(2) .meal-visual {background: #efd7c8}
+.meal:nth-child(3) .meal-visual {background: #ece1bb}
+.choice[aria-pressed=true] {background: #eff3df}
+.future {background: #f4e4d6; margin-bottom: 38px}
+.future-grid {display: grid; grid-template-columns: 1fr 1.2fr; gap: 55px; align-items: center}
+.future-grid > div > p {max-width: 410px; margin-top: 15px; color: var(--muted)}
+.future-list {display: grid; gap: 9px}
+.future-list article {display: flex; gap: 15px; padding: 13px 18px; background: #fffbf3; border-radius: 8px}
+.future-list article span {color: #62764a; font-size: 11px; margin-top: 3px}
+.future-list h3 {font-size: 15px}
+.future-list p {font-size: 12px; color: var(--muted)}
+@media(max-width: 760px) {
+  .navlinks {display: none}
+  .hero h1 {font-size: clamp(42px, 9vw, 57px)}
+  .schedule,.future-grid {grid-template-columns: 1fr}
+  .schedule {padding: 17px; gap: 14px}
+  .future-grid {gap: 23px}
+}
+.hero-art {
+  height: auto;
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  padding: 0;
+}
+.hero-art img {position: absolute; inset: 0; object-fit: contain; object-position: center}
+.hero-art .art-sticker {
+  top: 12px;
+  right: 12px;
+  width: auto;
+  height: auto;
+  padding: 7px 12px;
+  border-radius: 8px;
+  transform: none;
+  line-height: 1.15;
+}
+.hero-art .art-sticker strong {font-size: 19px; letter-spacing: -.5px}
+.hero-art .art-label {left: 12px; bottom: 12px; padding: 8px 11px}
+.hero-art .art-label strong {font-size: 14px}
+.meal-visual img {position: absolute; inset: 0; object-position: center}
+.meal:nth-child(2) img {object-position: center 84%}
+.meal:nth-child(3) img {object-position: center 100%}
+.menu-note a {text-decoration: underline}
+@media(max-width: 380px) {nav {gap: 8px} nav .logo {font-size: 20px} nav .button {padding-inline: 9px}}
+
+.profile-help {
+  margin-top: 16px;
+  padding: 14px 17px;
+  background: #eeefdf;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+}
+.profile-help dl {margin: 12px 0}
+.profile-help dl div {padding: 8px 0; border-bottom: 1px solid var(--line)}
+.profile-help dt {font-size: 12px; font-weight: 700}
+.profile-help dd {margin: 2px 0 0; font-size: 12px; color: var(--muted)}
+
+.meal-visual {height: auto; aspect-ratio: 3 / 2}
+.meal-visual img,
+.meal:nth-child(2) img,
+.meal:nth-child(3) img {object-fit: contain; object-position: center}
+@media(max-width: 700px) {
+  .meal {display: block}
+  .meal-visual {min-height: 0}
+}
+
+
+/* Hiérarchie typographique */
+.hero h1, h2 {font-weight: 800}
+.profile .kcal,
+.summary .price {
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.macroline, .meal-macros b {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+@media (max-width: 760px) {
+  .hero h1 {letter-spacing: -.045em; line-height: 1.1}
+}
+</style>
+</head>
+<body>
+<div class="announcement">MOUGINS & ENVIRONS <span>•</span> COMMANDES JUSQU’AU JEUDI <span>→</span> LIVRAISON LE DIMANCHE</div>
+<header><nav class="wrap" aria-label="Navigation principale"><a class="logo" href="#">Warm<span>Up</span><i aria-hidden="true">↗</i></a><div class="navlinks"><a href="#formules">Les formules</a><a href="#menu">Au menu</a><a href="#comment">Comment ça marche</a><a href="#suite">La suite</a></div><a class="button" href="#formules">Composer ma box <span>↗</span></a></nav></header>
+<main>
+<div class="hero wrap"><div><div class="eyebrow"><span class="dot"></span>Déjeuners de bureau · Mougins et environs</div><h1>Mange avec plaisir.<br><em>Bouge à ton rythme.</em></h1><p class="intro">Des penne crémeuses, des légumes rôtis, de vraies sauces. Choisis 3 ou 5 déjeuners riches en protéines et les portions qui te conviennent. Je cuisine et je te livre le dimanche, pour que tu puisses consacrer ta semaine à ce que tu aimes, entraînement compris.</p><a href="#formules" class="button">Je choisis mes déjeuners <span>↗</span></a><div class="hero-foot"><span>Macros par portion</span><span>Commande à la semaine</span></div></div><div class="hero-art"><img src="couverture.png" alt="Bol de chili, riz, avocat et fromage fondu" fetchpriority="high"><div class="art-sticker"><strong>3 ou 5</strong>déjeuners<br>à emporter</div><div class="art-label"><strong>Bol de chili</strong>Riz, avocat et fromage fondu</div></div></div>
+<div class="wrap"><div class="schedule" aria-label="Calendrier hebdomadaire">
+<div><span class="schedule-icon" aria-hidden="true">01</span><div><strong>Jusqu’au jeudi</strong><small>Choisis ton menu et ton profil de macros.</small></div></div>
+<div><span class="schedule-icon" aria-hidden="true">02</span><div><strong>Le dimanche</strong><small>Je livre ta box à Mougins et dans les environs.</small></div></div>
+<div><span class="schedule-icon" aria-hidden="true">03</span><div><strong>Au bureau</strong><small>Emporte un déjeuner déjà portionné.</small></div></div>
+</div></div>
+<section id="formules"><div class="wrap"><div class="section-top"><div class="heading"><div class="eyebrow">Composer ma box</div><h2>Commence par tes prochains midis</h2></div><p>Trois repas les jours de bureau, ou cinq pour couvrir la semaine de travail. Choisis les portions qui s’intègrent à tes habitudes.</p></div><div class="config-layout"><div><div class="step"><h3 class="step-title"><span class="number">1</span> Combien de déjeuners au bureau ?</h3><div class="choices" id="quantities"><button class="choice" data-qty="3" aria-pressed="false"><span class="check"></span><strong>3 repas</strong><small>Pour tes jours de présence au bureau</small></button><button class="choice" data-qty="5" aria-pressed="true"><span class="check"></span><strong>5 repas</strong><small>Un déjeuner pour chaque jour travaillé</small></button></div></div><div class="step"><h3 class="step-title"><span class="number">2</span> Quel profil de macros ?</h3><div class="profile-grid" id="profiles"></div><p class="tip">P = protéines · G = glucides · L = lipides. Valeurs cibles moyennes par repas ; consulte les valeurs de chaque recette ci-dessous.</p>
+<details class="profile-help">
+  <summary>Tu ne sais pas quel profil choisir ?</summary>
+  <p>Pars de ton déjeuner habituel. As-tu envie d’une portion plus compacte, d’un déjeuner de taille classique ou d’une assiette plus généreuse ?</p>
+  <dl>
+    <div><dt>P’tite Fourchette · Portion compacte</dt><dd>À essayer si tu préfères habituellement un déjeuner plus petit.</dd></div>
+    <div><dt>Bonne Fourchette · Portion classique</dt><dd>Le format intermédiaire si tu hésites entre les deux tailles.</dd></div>
+    <div><dt>Fourchette XXL · Portion généreuse</dt><dd>À essayer si tu préfères une assiette plus copieuse, avec davantage de protéines et de féculents.</dd></div>
+  </dl>
+  <p>Tu peux commencer par trois repas, puis ajuster ta prochaine box selon ton appétit. Les calories affichées concernent chaque déjeuner. Pour définir un objectif calorique adapté à ta journée, tu peux en parler avec un diététicien.</p>
+</details></div></div><aside class="summary" aria-label="Récapitulatif de la box"><div class="eyebrow">C’est ta box</div><div aria-live="polite" aria-atomic="true"><h3 id="summary-title"></h3><p class="description" id="summary-sub"></p><dl><div><dt>Prix par repas</dt><dd id="unit-price"></dd></div><div><dt>Livraison le dimanche</dt><dd id="mode-price"></dd></div><div><dt>Moyenne par déjeuner</dt><dd id="summary-kcal"></dd></div></dl><div class="price"><span id="total"></span> <small>/ box</small></div></div><button id="preview-order" class="button light">Voir ma sélection <span>↗</span></button><p class="fine">Prix indicatifs pour cette maquette.<br>Aucun paiement ni commande réelle.</p></aside></div></div></section>
+<section class="weekly" id="menu"><div class="wrap"><div class="section-top"><div><div class="eyebrow">Exemple de menu</div><h2>Des plats que tu as envie de retrouver à midi</h2></div><div class="menu-top"><label for="menu-profile">Macros du profil</label><select id="menu-profile" aria-label="Profil de macros du menu"></select></div></div><div class="meals" id="meals"></div><p class="menu-note" id="menu-note"></p><p class="menu-note">Menu et valeurs nutritionnelles illustratifs. Photo de présentation commune aux trois cartes.</p></div></section>
+<section id="comment"><div class="wrap how"><div class="how-copy"><div class="eyebrow">Une commande par semaine</div><h2>Fais de la place à ce qui te fait du bien</h2><p>Un déjeuner que tu attends avec plaisir, un soir où tu peux aller à la salle ou sortir marcher. Quand les repas sont prêts, c’est plus facile de garder du temps pour bouger à ta façon.</p></div><ol class="how-list"><li><span class="count">01 /</span><div><h3>Compose ta box à l’avance</h3><p>Choisis 3 ou 5 repas et ton profil de macros. Les commandes ferment chaque jeudi.</p></div></li><li><span class="count">02 /</span><div><h3>Je cuisine et je livre le dimanche</h3><p>Je prépare tes portions et les livre le dimanche. Chaque plat indique ses macros et ses consignes de conservation.</p></div></li><li><span class="count">03 /</span><div><h3>Emporte ton déjeuner</h3><p>Respecte la chaîne du froid jusqu’au bureau, puis suis les instructions de conservation et de réchauffage indiquées.</p></div></li></ol></div></section>
+<div class="wrap"><div class="founder"><div class="founder-mark" aria-hidden="true">↗</div><div><p>« Je m’entraîne et je prépare mes repas chaque dimanche. Ce qui m’aide à tenir dans la durée, c’est d’avoir des plats qui me font vraiment envie. C’est cette façon de manger que j’ai envie de partager. »</p><small>La fondatrice · Cuisine locale à Mougins</small></div></div></div>
+<section><div class="wrap faq"><div><div class="eyebrow">Livraison, portions et conservation</div><h2>Les questions pratiques</h2></div><div><details><summary>À qui s’adresse WarmUp ?</summary><p>Aux sportifs autonomes qui connaissent déjà leurs repères alimentaires et souhaitent déléguer leurs déjeuners de bureau. Les profils décrivent des portions ; ils ne constituent pas un bilan nutritionnel ou une prescription personnalisée.</p></details><details><summary>Que contiennent les box de 3 et 5 repas ?</summary><p>La box de 3 comprend une portion de chacune des trois recettes. La box de 5 comprend deux portions de la première recette, deux de la deuxième et une de la troisième. Toutes suivent le profil choisi.</p></details><details><summary>Les macros sont-elles identiques pour chaque recette ?</summary><p>Non. Chaque profil correspond à une moyenne sur les trois recettes. Les valeurs de chaque plat restent visibles. Dans cette maquette, elles servent uniquement à illustrer le fonctionnement ; les recettes finales devront être pesées et leurs valeurs calculées.</p></details><details><summary>Comment conserver cinq repas ?</summary><p>La date limite et les conditions de conservation sont indiquées par plat. Une box de cinq repas ne signifie pas cinq jours garantis au réfrigérateur. Le calendrier de remise et les éventuelles portions congelées devront être précisés avant le lancement.</p></details><details><summary>Peut-on adapter les recettes aux allergies ?</summary><p>Les ingrédients et allergènes seront communiqués avant toute commande. Une adaptation dépendra de la recette et des conditions de préparation ; elle devra être confirmée directement avant l’achat.</p></details><details><summary>Quand commander et où se faire livrer ?</summary><p>Les commandes sont ouvertes jusqu’au jeudi pour la livraison du dimanche à Mougins et dans les environs. La zone exacte sera confirmée au lancement. Tu peux commander une semaine à la fois.</p></details></div></div></section>
+<section id="suite" class="future">
+  <div class="wrap future-grid">
+    <div>
+      <div class="eyebrow">Dans les cartons</div>
+      <h2>De la pause déjeuner à toute ta semaine.</h2>
+      <p>Je commence par les déjeuners de bureau. J’aimerais ensuite t’aider à organiser le reste de ta semaine, avec des idées pour manger avec plaisir et trouver un rythme qui te ressemble.</p>
+    </div>
+    <div class="future-list">
+      <article><span aria-hidden="true">01</span><div><h3>Calcul et suivi des macros</h3><p>Retrouve tes repères au même endroit et suis-les au fil de la semaine.</p></div></article>
+      <article><span aria-hidden="true">02</span><div><h3>Menus de la semaine</h3><p>Planifie tes repas autour de tes journées de travail et d’entraînement.</p></div></article>
+      <article><span aria-hidden="true">03</span><div><h3>Coaching et snacks protéinés</h3><p>Des pistes pour la suite, avec des collations à emporter entre deux rendez-vous.</p></div></article>
+    </div>
+  </div>
+</section>
+<div class="wrap"><div class="bottom-cta"><div class="eyebrow">Commandes jusqu’au jeudi</div><h2>Envie de changer tes déjeuners ?</h2><p>Commence par trois repas que tu as envie de manger. Commande avant la clôture du jeudi pour une livraison le dimanche.</p><a class="button" href="#formules">Composer ma box <span>↗</span></a></div></div>
+</main>
+<footer><div class="wrap"><div class="footer-row"><a class="logo" href="#">Warm<span>Up</span><i aria-hidden="true">↗</i></a><small>Mougins & environs · Déjeuners pour sportifs autonomes</small><a href="#formules" style="font-size:12px">Retour aux formules ↑</a></div><p class="demo-note">Maquette de concept — nom provisoire, tarifs, recettes et macros à valider avant commercialisation. La sélection sert à prévisualiser ta box.</p></div></footer>
+<dialog id="order-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Fermer la sélection">×</button><div class="eyebrow">Aperçu de ta box</div><h2 id="dialog-title">Ta semaine prend forme.</h2><div id="order-detail"></div><p>Ceci est une démonstration : aucun paiement n’est demandé et aucune commande n’est enregistrée. Les prix et les macros restent à valider.</p><button class="button" id="back-config" style="margin-top:20px">Revenir à ma box</button></dialog>
+<script>
+const profiles=[{id:'p40',name:'P’tite Fourchette',p:40,g:45,l:15,price3:45,price5:69,sub:'Portion compacte'},{id:'p50',name:'Bonne Fourchette',p:50,g:60,l:18,price3:51,price5:79,sub:'Portion classique'},{id:'p60',name:'Fourchette XXL',p:60,g:80,l:20,price3:57,price5:89,sub:'Portion généreuse'}];
+const recipes=[{name:'Penne au poulet crémeux',description:'Penne au poulet, tomates séchées et sauce crémeuse.',type:'POULET',photo:'recette.png',alt:'Pâtes crémeuses, poulet grillé et brocolis rôtis',delta:[0,0,0]},{name:'Bol de patate douce au bœuf',description:'Patate douce rôtie, bœuf haché et garniture de maïs.',type:'BŒUF',photo:'recette.png',alt:'Pâtes crémeuses, poulet grillé et brocolis rôtis',delta:[2,-3,1]},{name:'Poulet rôti, riz et parmesan',description:'Poulet et riz au four, tomates cerises, épinards et parmesan.',type:'POULET',photo:'recette.png',alt:'Pâtes crémeuses, poulet grillé et brocolis rôtis',delta:[-2,3,-1]}];
+let state={qty:5,profile:'p50'};
+const deliveryFee = 6;
+const euro=n=>new Intl.NumberFormat('fr-FR',{style:'currency',currency:'EUR',maximumFractionDigits:2}).format(n);
+const energy=(p,g,l)=>4*p+4*g+9*l;
+document.getElementById('profiles').innerHTML=profiles.map(p=>'<button class="choice profile" data-profile="'+p.id+'" aria-pressed="false"><strong>'+p.name+'</strong><span class="kcal">'+energy(p.p,p.g,p.l)+' <span>kcal</span></span><div class="macroline">P '+p.p+' g · G '+p.g+' g · L '+p.l+' g</div><small>'+p.sub+'</small></button>').join('');
+document.getElementById('menu-profile').innerHTML=profiles.map(p=>'<option value="'+p.id+'">'+p.name+'</option>').join('');
+function render(){const p=profiles.find(x=>x.id===state.profile);const subtotal=p['price'+state.qty];const shipping=deliveryFee;document.querySelectorAll('[data-qty]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.qty)===state.qty)));document.querySelectorAll('[data-profile]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.profile===state.profile)));document.getElementById('menu-profile').value=p.id;document.getElementById('summary-title').textContent=state.qty+' déjeuners · '+p.name;document.getElementById('summary-sub').textContent='3 recettes · P '+p.p+' g / G '+p.g+' g / L '+p.l+' g en moyenne par recette';document.getElementById('unit-price').textContent=euro(subtotal/state.qty);document.getElementById('mode-price').textContent=euro(shipping);
+const counts=state.qty===3?[1,1,1]:[2,2,1];let sums=[0,0,0];recipes.forEach((r,i)=>r.delta.forEach((d,j)=>sums[j]+=([p.p,p.g,p.l][j]+d)*counts[i]));let totalKcal=energy(...sums);document.getElementById('summary-kcal').textContent=Math.round(totalKcal/state.qty)+' kcal';document.getElementById('total').textContent=euro(subtotal+shipping);
+document.getElementById('meals').innerHTML=recipes.map((r,i)=>{const mp=p.p+r.delta[0],mg=p.g+r.delta[1],ml=p.l+r.delta[2];return '<article class="meal"><div class="meal-visual"><img src="'+r.photo+'" alt="'+r.alt+'" loading="lazy" decoding="async"><span class="meal-tag">'+r.type+' · '+counts[i]+' portion'+(counts[i]>1?'s':'')+'</span></div><div class="meal-body"><h3>'+r.name+'</h3><p>'+r.description+'</p><div class="meal-macros"><div><b>'+energy(mp,mg,ml)+'</b><span>KCAL</span></div><div><b>'+mp+' g</b><span>PROTÉINES</span></div><div><b>'+mg+' g</b><span>GLUCIDES</span></div><div><b>'+ml+' g</b><span>LIPIDES</span></div></div></div></article>'}).join('');
+document.getElementById('menu-note').textContent='Dans ta box de '+state.qty+' repas : '+counts.join(' + ')+' portions. Total illustratif : '+totalKcal+' kcal · P '+sums[0]+' g · G '+sums[1]+' g · L '+sums[2]+' g. Il s’agit des déjeuners uniquement.';
+document.getElementById('order-detail').textContent=state.qty+' repas · '+p.name+' · '+'Livraison le dimanche'+' — '+euro(subtotal+shipping)+'. Moyenne de la box : '+Math.round(totalKcal/state.qty)+' kcal par déjeuner.';}
+document.querySelectorAll('[data-qty]').forEach(b=>b.addEventListener('click',()=>{state.qty=Number(b.dataset.qty);render()}));document.querySelectorAll('[data-profile]').forEach(b=>b.addEventListener('click',()=>{state.profile=b.dataset.profile;render()}));document.getElementById('menu-profile').addEventListener('change',e=>{state.profile=e.target.value;render()});
+const dialog=document.getElementById('order-dialog');document.getElementById('preview-order').addEventListener('click',()=>dialog.showModal());document.querySelector('.dialog-close').addEventListener('click',()=>dialog.close());document.getElementById('back-config').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close()}});render();
+</script>
+</body>
+</html>
